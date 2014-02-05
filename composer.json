@@ -12,8 +12,7 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"Kir\\Stores\\KeyValueStores\\": "src/",
-			"Kir\\Stores\\KeyValueStores\\ComplianceTests\\": "tests/"
+			"Kir\\Stores\\KeyValueStores\\": ["src/", "tests/"]
 		}
 	}
 }
