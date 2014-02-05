@@ -5,6 +5,7 @@
 	"homepage": "https://github.com/rkrx/php-key-value-stores",
 	"license": "MIT",
 	"require": {
+		"php": ">= 5.3"
 	},
 	"require-dev": {
 	},

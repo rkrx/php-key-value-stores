@@ -13,7 +13,7 @@ interface Contexts {
 
 	/**
 	 * @param string $name
-	 * @return Store
+	 * @return ReadWriteStore
 	 * @throws InvalidOperationException
 	 * @throws InvalidArgumentException
 	 */
