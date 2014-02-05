@@ -19,3 +19,10 @@ interface ReadWriteStore
 The `ReadWriteStore`-Interface has no own methods. It extends the 2 Interfaces `ReadableStore` and `WritableStore` which in turn extend from other, more basic interfaces. The idea behind this is described [here](http://en.wikipedia.org/wiki/Interface_segregation_principle).
 
 ![Inheritance](assets/diagram.png)
+
+
+Composer
+--------
+
+composer require "rkr/php-key-value-stores" "v0.0.1"
+
