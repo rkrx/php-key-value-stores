@@ -1,0 +1,16 @@
+{
+	"name": "rkr/key-value-stores",
+	"type": "library",
+	"description": "This is a cache system that uses Redis for rapid caching.",
+	"homepage": "https://github.com/rkrx/php-key-value-stores",
+	"license": "MIT",
+	"require": {
+	},
+	"require-dev": {
+	},
+	"autoload": {
+		"psr-0": {
+			"Kir\\Stores\\KeyValueStores\\": "src/"
+		}
+	}
+}
