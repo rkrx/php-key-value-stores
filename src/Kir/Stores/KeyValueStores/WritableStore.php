@@ -3,7 +3,7 @@ namespace Kir\Stores\KeyValueStores;
 
 use InvalidArgumentException;
 
-interface WritableStore extends WriteOnlyReadWriteStore {
+interface WritableStore extends WriteOnlyStore {
 	/**
 	 * @param $key
 	 * @return $this

@@ -8,18 +8,14 @@ Common interfaces
 
 The simple version of the key value stores provide methods to set, get and remove a entry. There is also a method to test if a entry is existing:
 
-```PHP
-interface Store {
-	/** ... */
-	public function has($key);
-
-	/** ... */
-	public function get($key, $default=null);
-
-	/** ... */
-	public function set($key, $value);
-
-	/** ... */
-	public function remove($key);
-}
 ```
+interface ReadWriteStore
+	public function has($key);
+	public function get($key, $default=null);
+	public function set($key, $value);
+	public function remove($key);
+```
+
+The `ReadWriteStore`-Interface has no own methods. It extends the 2 Interfaces `ReadableStore` and `WritableStore` which in turn extend from other, more basic interfaces. The idea behind this is described [here](http://en.wikipedia.org/wiki/Interface_segregation_principle).
+
+![Inheritance](assets/diagram.png)

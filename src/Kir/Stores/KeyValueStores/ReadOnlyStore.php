@@ -3,7 +3,7 @@ namespace Kir\Stores\KeyValueStores;
 
 use InvalidArgumentException;
 
-interface ReadOnlyStore {
+interface ReadOnlyStore extends Store {
 	/**
 	 * @param string $key
 	 * @param mixed $default If the key does not exist, use this
