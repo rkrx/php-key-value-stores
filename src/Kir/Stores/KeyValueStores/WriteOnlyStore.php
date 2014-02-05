@@ -1,8 +1,6 @@
 <?php
 namespace Kir\Stores\KeyValueStores;
 
-use InvalidArgumentException;
-
 interface WriteOnlyStore extends Store {
 	/**
 	 * @param string $key

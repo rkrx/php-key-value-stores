@@ -1,8 +1,6 @@
 <?php
 namespace Kir\Stores\KeyValueStores;
 
-use InvalidArgumentException;
-
 interface ReadOnlyStore extends Store {
 	/**
 	 * @param string $key

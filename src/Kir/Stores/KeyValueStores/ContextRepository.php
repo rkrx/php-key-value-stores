@@ -1,9 +1,7 @@
 <?php
 namespace Kir\Stores\KeyValueStores;
 
-use InvalidArgumentException;
-
-interface Contexts {
+interface ContextRepository {
 	/**
 	 * @param string $name
 	 * @return bool

@@ -1,0 +1,13 @@
+<phpunit bootstrap="tests/bootstrap.php"
+		 backupGlobals="false"
+		 backupStaticAttributes="false"
+		 strict="true"
+		 verbose="true"
+		 timeoutForSmallTests="5">
+	<testsuites>
+		<testsuite name="KeyValueStores">
+			<file>tests/Kir/Stores/KeyValueStores/ComplianceTests/SelfTests/ReadWriteStoreTest.php</file>
+			<file>tests/Kir/Stores/KeyValueStores/ComplianceTests/SelfTests/ContextRepositoryTest.php</file>
+		</testsuite>
+	</testsuites>
+</phpunit>
