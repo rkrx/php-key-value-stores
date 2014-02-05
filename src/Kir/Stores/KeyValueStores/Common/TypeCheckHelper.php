@@ -49,9 +49,9 @@ final class TypeCheckHelper {
 		if(is_resource($value)) {
 			throw new InvalidArgumentException("{$title} must not be a resource.");
 		}
-		if(!(is_string($value) || is_int($value))) {
+		if(!(is_string($value) || is_int($value) || is_null($value))) {
 			$type = gettype($value);
-			throw new InvalidArgumentException("{$title} must be an string of int. Current type is {$type}.");
+			throw new InvalidArgumentException("{$title} must be null, string or int. Current type is {$type}.");
 		}
 		return (string) $value;
 	}
