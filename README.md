@@ -3,8 +3,11 @@ php-key-value-stores
 
 This project aims to provide a standard interface to common key-value-stores like memcache, redis or similar. If an author of a specific driver develops against these interfaces, is can be used everywhere the interfaces are implemented. This project does not ship a concrete implementations to existing stores.
 
+
 Common interfaces
 -----------------
+
+### Stores
 
 The simple version of the key value stores provide methods to set, get and remove a entry. There is also a method to test if a entry is existing:
 
@@ -21,8 +24,15 @@ The `ReadWriteStore`-Interface has no own methods. It extends the 2 Interfaces `
 ![Inheritance](assets/diagram.png)
 
 
-Composer
---------
+### Contexts
+
+A context is similar to a table in a RDBMS. With contexts, you can separate stores for different environments or components. So a context is like a central singleton-repository for stores.
+
+For example, a context could be used to define a database connection. Every store created by that context inherit that connection and possibly some metadata too.
+
+
+Installation via composer
+-------------------------
 
 composer require "rkr/php-key-value-stores" "v0.0.1"
 
