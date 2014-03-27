@@ -1,4 +1,5 @@
-.idea
-composer.lock
-vendor
-test.db
+/.idea
+/composer.lock
+/vendor
+/test.db
+/atlassian-ide-plugin.xml
