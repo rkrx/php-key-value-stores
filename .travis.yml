@@ -1,11 +1,16 @@
-before_install:
-  - php /home/travis/.phpenv/versions/5.5.9/bin/composer.phar self-update
-install: php vendor/vendors.php
 language: php
+
 php:
   - 5.5
   - 5.4
   - 5.3
   - hhvm
+
+before_install:
+  - php /home/travis/.phpenv/versions/5.5.9/bin/composer.phar self-update
+
+install:
+  - php vendor/vendors.php
+
 script:
   - phpunit -c tests.xml
