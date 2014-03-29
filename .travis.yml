@@ -8,7 +8,7 @@ php:
 
 before_script:
   - composer self-update
-  - composer --prefer-source --dev install
+  - composer update
 
 install:
   - php vendor/autoload.php
