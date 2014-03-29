@@ -6,8 +6,9 @@ php:
   - 5.3
   - hhvm
 
-before_install:
-  - php /home/travis/.phpenv/versions/5.5.9/bin/composer.phar self-update
+before_script:
+  - composer self-update
+  - composer --prefer-source --dev install
 
 install:
   - php vendor/autoload.php
