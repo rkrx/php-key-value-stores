@@ -1,7 +1,7 @@
 php-key-value-stores
 ====================
 
-![Travis](https://travis-ci.org/rkrx/php-key-value-stores.svg)
+[![Travis](https://travis-ci.org/rkrx/php-key-value-stores.svg)](https://travis-ci.org/rkrx/php-key-value-stores)
 
 This project aims to provide a standard interface to common key-value-stores like memcache, redis or similar. If an author of a specific driver develops against these interfaces, is can be used everywhere the interfaces are implemented. This project does not ship a concrete implementations to existing stores.
 
