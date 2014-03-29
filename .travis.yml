@@ -7,4 +7,5 @@ php:
   - 5.4
   - 5.3
   - hhvm
-script: phpunit tests.xml
+script:
+  - phpunit -c tests.xml
