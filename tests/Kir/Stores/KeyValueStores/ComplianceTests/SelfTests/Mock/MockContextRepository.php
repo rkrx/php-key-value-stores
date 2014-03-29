@@ -1,7 +1,7 @@
 <?php
 namespace Kir\Stores\KeyValueStores\ComplianceTests\SelfTests\Mock;
 
-use Kir\Stores\KeyValueStores\Common\TypeCheckHelper;
+use Kir\Stores\KeyValueStores\Helpers\TypeCheckHelper;
 use Kir\Stores\KeyValueStores\ContextRepository;
 use Kir\Stores\KeyValueStores\InvalidArgumentException;
 use Kir\Stores\KeyValueStores\InvalidOperationException;

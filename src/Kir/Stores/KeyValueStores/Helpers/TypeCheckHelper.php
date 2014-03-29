@@ -1,5 +1,5 @@
 <?php
-namespace Kir\Stores\KeyValueStores\Common;
+namespace Kir\Stores\KeyValueStores\Helpers;
 
 use Kir\Stores\KeyValueStores\InvalidArgumentException;
 
