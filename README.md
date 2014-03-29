@@ -62,5 +62,5 @@ A store-author can make use of the provided standardtests to ensure compilance. 
 Installation via composer
 -------------------------
 
-composer require "rkr/php-key-value-stores" "v0.0.2"
+composer require "rkr/php-key-value-stores" "~v0.0"
 
