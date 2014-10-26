@@ -15,7 +15,12 @@
 		"phpunit/phpunit": "~3.7"
 	},
 	"autoload": {
-		"psr-0": {
+		"psr-4": {
+			"Kir\\Stores\\KeyValueStores\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
 			"Kir\\Stores\\KeyValueStores\\": ["src/", "tests/"]
 		}
 	}

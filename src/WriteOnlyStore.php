@@ -5,9 +5,8 @@ interface WriteOnlyStore extends Store {
 	/**
 	 * @param string $key
 	 * @param mixed $value The value to store.
+	 * @param int|null $ttl
 	 * @return $this
-	 * @throws InvalidOperationException
-	 * @throws InvalidArgumentException
 	 */
-	public function set($key, $value);
+	public function set($key, $value, $ttl = null);
 }
